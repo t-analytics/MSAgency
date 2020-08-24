@@ -1,13 +1,10 @@
 from datetime import datetime, timedelta
 
-from connectors.connectors._Utils import my_slice, create_fields, pop_keys, slice_date_on_period
-from connectors.connectors._BigQuery import BigQuery
+from connectors._Utils import my_slice, create_fields, pop_keys, slice_date_on_period
+from connectors._BigQuery import BigQuery
 import requests, time
 
 import pandas as pd
-
-# https://oauth.vk.com/authorize?client_id=7446867&redirect_uri=http://localhost:8000/auth/vkontakte&display=page&scope=ads,offline,groups,stats&response_type=code
-# https://oauth.vk.com/access_token?client_id=7446867&client_secret=3yU3omb66HfxRlujOKxJ&redirect_uri=http://localhost:8000/auth/vkontakte&code=
 
 
 class VKontakte:

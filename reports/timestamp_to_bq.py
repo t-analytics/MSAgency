@@ -1,3 +1,6 @@
+#!usr/bin/python3
+import sys
+sys.path.insert(0, '/home/rta_analytics/MSAgency')
 from connectors._BigQuery import BigQuery
 from datetime import datetime
 
